@@ -27,4 +27,12 @@ class Appointment extends Model
     {
         return $this->belongsTo(Employee::class);
     }
+
+    public function run(): void
+    {
+        Appointment::factory()
+                ->count(50)
+                ->hasPosts(1)
+                ->create();
+    }
 }
