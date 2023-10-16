@@ -19,5 +19,7 @@ class AppointmentSeeder extends Seeder
             'employee_id' => Str::random(10).'@gmail.com',
             'client_id' => Str::random(10),
         ]);
+
+        //commit para naay ma dugang green sa github
     }
 }
